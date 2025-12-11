@@ -13,6 +13,31 @@ const pageTitle = "Smitsky's Page";
 
     <main> 
         <h1>Welcome to My Portfolio</h1>
+        <img src="/profile.jpeg" alt="My photo in New York City" class="profile-img" />
         <p>This is where I will showcase my projects and skills.</p>
     </main>
 </Layout>
+
+</Layout>
+
+<style>
+  /* Target the class we added to the <img> tag */
+  .profile-img {
+    /* Sets the maximum width the image can take up */
+    max-width: 400px; 
+    
+    /* Ensures the image never overflows its parent container (good practice) */
+    width: 100%; 
+
+    /* Ensures the aspect ratio is maintained when resizing */
+    height: auto; 
+    
+    /* Makes the photo centered with the rest of the main content */
+    display: block;
+    margin: 1rem auto;
+    
+    /* Optional: Makes the image corners slightly rounded */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+</style>
