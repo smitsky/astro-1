@@ -1,0 +1,32 @@
+---
+// 1. The Component Script (Frontmatter) is empty because we don't need any logic here.
+---
+<header>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/projects">Projects</a>
+  </nav>
+</header>
+
+<style is:global>
+  header {
+    background-color: #333;
+    padding: 1rem 0;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 0.5rem;
+    transition: color 0.3s;
+  }
+  a:hover {
+    color: #4CAF50; /* A light green color on hover */
+  }
+</style>

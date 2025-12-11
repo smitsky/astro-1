@@ -1,11 +1,17 @@
 ---
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro'; // <--- ADD THIS LINE
+const pageTitle = "Smitsky's Page";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title={ pageTitle }>
+  <Navigation />
+  <main>
+    <h1>Hello World! My portfolio is live!</h1>
+    <p>This content is from src/pages/index.astro.</p>
+  </main>
 </Layout>
