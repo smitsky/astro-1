@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+
+const pageTitle = "About Me - My Portfolio";
+---
+
+<Layout title={pageTitle}>
+    <Navigation />
+
+    <main> 
+        <h1>About Me</h1>
+
+        <p>
+            Hello! My name is Steve and this is my portfolio. 
+            I specialize in [Your Specialty, e.g., cloud computing, web development, data analysis]. 
+            I'm passionate about [Your passion, e.g., building user-friendly interfaces, solving complex problems].
+        </p>
+
+        <h2>My Skills & Experience</h2>
+        <p>
+            Use this section to list your skills using an unordered list (<ul> tag).
+        </p>
+        <ul>
+            <li>Skill 1: HTML, CSS, JavaScript, Astro</li>
+            <li>Skill 2: [Your Programming Language]</li>
+            <li>Skill 3: [Your Tools/Software]</li>
+        </ul>
+    </main>
+</Layout>

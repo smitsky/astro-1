@@ -1,0 +1,53 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+
+const pageTitle = "My Projects - Portfolio";
+---
+
+<Layout title={pageTitle}>
+    <Navigation />
+
+    <main> 
+        <h1>My Projects</h1>
+
+        <p>
+            Welcome to my project showcase! Below you will find examples of my work, 
+            demonstrating my skills in [Your Specialty].
+        </p>
+
+        <section class="project-grid">
+            <div class="project-card">
+                <h2>Project Alpha: E-Commerce Platform</h2>
+                <p>Built a full-stack e-commerce site using Node.js and React. Implemented custom shopping cart logic and secure payment processing.</p>
+                <a href="[LINK TO PROJECT DEMO]" target="_blank">View Live Demo</a>
+            </div>
+
+            <div class="project-card">
+                <h2>Project Beta: Data Visualization Dashboard</h2>
+                <p>Developed an interactive dashboard to visualize large datasets. Used D3.js for custom charting and optimized for mobile performance.</p>
+                <a href="[LINK TO PROJECT REPO]" target="_blank">View Code on GitHub</a>
+            </div>
+
+            </section>
+    </main>
+</Layout>
+
+<style>
+  .project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for cards */
+    gap: 20px;
+    margin-top: 2rem;
+  }
+  .project-card {
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s;
+  }
+  .project-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Adds a nice lift effect */
+  }
+</style>
