@@ -10,23 +10,40 @@
 </header>
 
 <style is:global>
+  /* 1. HEADER: Controls the background and width of the entire bar */
   header {
-    background-color: #333;
+    background-color: #3B82F6; 
     padding: 1rem 0;
+    
+    /* ADD THIS LINE: Allows the max-width to be honored */
+    width: 100%; 
+    
+    /* Max Width: This should now constrain the width */
+    max-width: 600px; 
+    
+    /* Centering: This centers the constrained header */
+    margin: 0 auto; 
+    
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   }
+  
+  /* 2. NAV: Controls the spacing of the links */
   nav {
     display: flex;
     justify-content: center;
     gap: 20px;
   }
+  
+  /* 3. LINKS: Controls the text color and hover effect */
   a {
     color: white;
     text-decoration: none;
     font-size: 1.1em;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem; /* Added horizontal padding to the links */
     transition: color 0.3s;
   }
   a:hover {
-    color: #4CAF50; /* A light green color on hover */
+    color: #FFC107; /* Changed hover color to a bright yellow/gold for contrast */
   }
 </style>
