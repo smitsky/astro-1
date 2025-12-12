@@ -1,5 +1,4 @@
-<style>
-	html {
+html {
         /* Set a distinct color (e.g., light blue) for testing */
         background-color: #A0D0FF; /* Light Blue */ 
 		margin: 0;
@@ -29,4 +28,3 @@
         max-width: 800px;
         width: 100%;
     }
-</style>
