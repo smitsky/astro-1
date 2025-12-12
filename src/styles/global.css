@@ -1,0 +1,32 @@
+<style>
+	html {
+        /* Set a distinct color (e.g., light blue) for testing */
+        background-color: #A0D0FF; /* Light Blue */ 
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+    body {
+        /* Ensure the body is transparent or has a distinct background */
+        background-color: transparent; 
+        
+        /* The rest of the centering styles you added */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        
+        padding-top: 2rem; 
+    }
+    
+    /* Style the main content area (where your text and image are) */
+    main {
+        background-color: white; /* Keep the content box white for contrast */
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        width: 100%;
+    }
+</style>
